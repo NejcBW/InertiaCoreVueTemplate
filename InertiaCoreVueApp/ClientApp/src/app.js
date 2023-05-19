@@ -1,5 +1,4 @@
-﻿// This line must be empty, otherwise it doesn't work
-import {createApp, h} from 'vue'
+﻿import {createApp, h} from 'vue'
 import {createInertiaApp} from '@inertiajs/vue3'
 
 createInertiaApp({
