@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace WebApplication1.Views;
+namespace InertiaCoreVueApp.Views;
 
 public class App : PageModel
 {

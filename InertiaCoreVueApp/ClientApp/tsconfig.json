@@ -1,8 +1,10 @@
 ﻿{
   "compilerOptions": {
+    "allowJs": true,
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
+    "jsx": "preserve",
     "rootDir": "./src",
     "strict": true,
     "noEmit": true,
@@ -17,6 +19,7 @@
     },
     "types": [
       "vite/client"
-    ]
+    ],
+    "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue", "app.ts"]
   }
 }
