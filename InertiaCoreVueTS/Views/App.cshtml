@@ -1,0 +1,17 @@
+﻿@using InertiaCore
+@using InertiaCore.Utils
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title inertia>Inertia ASP.NET Core Vue Example</title>
+</head>
+<body>
+
+@await Inertia.Html(Model)
+@Vite.Input("src/app.ts")
+
+</body>
+</html>
