@@ -1,0 +1,11 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Watch (TypeScript)" type="RunDotNetWatch" factoryName="RunDotNetWatch">
+    <option name="exePath" value="$PROJECT_DIR$/InertiaCoreVueTS/bin/Debug/net7.0/InertiaCoreVueTS.exe" />
+    <option name="programParameters" value="" />
+    <option name="projectFilePath" value="$PROJECT_DIR$/InertiaCoreVueTS/InertiaCoreVueTS.csproj" />
+    <option name="projectTfm" value="net7.0" />
+    <option name="restartOnRudeEditEditor" value="true" />
+    <option name="workingDirectory" value="$PROJECT_DIR$/InertiaCoreVueTS" />
+    <method v="2" />
+  </configuration>
+</component>

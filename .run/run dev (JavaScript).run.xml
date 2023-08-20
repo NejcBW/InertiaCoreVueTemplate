@@ -1,0 +1,12 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="run dev (JavaScript)" type="js.build_tools.npm">
+    <package-json value="$PROJECT_DIR$/InertiaCoreVueJS/ClientApp/package.json" />
+    <command value="run" />
+    <scripts>
+      <script value="dev" />
+    </scripts>
+    <node-interpreter value="project" />
+    <envs />
+    <method v="2" />
+  </configuration>
+</component>

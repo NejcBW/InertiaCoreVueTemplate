@@ -1,0 +1,7 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run compound (JavaScript)" type="CompoundRunConfigurationType">
+    <toRun name="Watch (JavaScript)" type="RunDotNetWatch" />
+    <toRun name="run dev (JavaScript)" type="js.build_tools.npm" />
+    <method v="2" />
+  </configuration>
+</component>
