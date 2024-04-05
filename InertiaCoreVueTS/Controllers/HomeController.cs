@@ -12,7 +12,7 @@ public class HomeController : Controller
     {
         var data = new
         {
-            User = new Person{GivenName = "Mike", FamilyName = "Doe"},
+            User = new Person{GivenName = "John", FamilyName = "Doe"},
             Message = new Message{MsgText = "Hello, World!"}
         };
 
