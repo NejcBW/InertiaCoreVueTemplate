@@ -1,12 +1,12 @@
 ﻿import {createApp, h, DefineComponent} from 'vue';
 import {createInertiaApp} from '@inertiajs/vue3';
 import {resolvePageComponent} from 'laravel-vite-plugin/inertia-helpers';
+// Import css resources here instead in vite.config.ts under laravel settings
 import './app.css';
 
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Inertia';
 
-createInertiaApp({
-    title: (title) => `${title} - ${appName}`,
+await createInertiaApp({
     resolve: (name) =>
         resolvePageComponent(
             `./Pages/${name}.vue`,
@@ -17,6 +17,7 @@ createInertiaApp({
             .use(plugin)
             .mount(el);
     },
+    title: (title) => `${title} - ${appName}`,
     progress: {
         color: '#4B5563',
     },

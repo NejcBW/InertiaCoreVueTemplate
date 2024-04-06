@@ -11,6 +11,11 @@
 <body>
 
 @await Inertia.Html(Model)
+
+@* Detect the Vite development server and inject *@
+@* the Vite client to enable Hot Module Replacement. *@
+@* In build mode, the directive will load your compiled *@
+@* and versioned assets, including any imported CSS. *@
 @Vite.Input("src/app.ts")
 
 </body>
