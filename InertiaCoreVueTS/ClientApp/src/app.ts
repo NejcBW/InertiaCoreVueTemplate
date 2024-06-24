@@ -8,18 +8,18 @@ import './app.css';
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Inertia';
 
 await createInertiaApp({
-    resolve: (name) =>
-        resolvePageComponent(
-            `./Pages/${name}.vue`,
-            import.meta.glob<DefineComponent>('./Pages/**/*.vue')
-        ),
-    setup({el, App, props, plugin}) {
-        createApp({render: () => h(App, props)})
-            .use(plugin)
-            .mount(el);
-    },
-    title: (title) => `${title} - ${appName}`,
-    progress: {
-        color: '#4B5563',
-    },
+  resolve: (name) =>
+    resolvePageComponent(
+      `./Pages/${name}.vue`,
+      import.meta.glob<DefineComponent>('./Pages/**/*.vue')
+    ),
+  setup({el, App, props, plugin}) {
+    createApp({render: () => h(App, props)})
+      .use(plugin)
+      .mount(el);
+  },
+  title: (title) => `${title} - ${appName}`,
+  progress: {
+    color: '#4B5563',
+  },
 });
