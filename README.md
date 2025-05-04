@@ -14,16 +14,16 @@ dotnet watch run
 
 ## Changing from TypeScript to JavaScript
 
-To change the project from TypeScript to JavaScript you should perform the following changes in the ```ClientApp```
-folder:
+To change the project from TypeScript to JavaScript you should perform the
+following changes in the `ClientApp` folder:
 
-1. Rename ```vite.config.ts``` to ```vite.config.js```. No content must be changed.
-2. Remove ```tsconfig.json``` file because it is not needed.
-3. From ```package.json``` remove the following dependencies:
+1. Rename `vite.config.ts` to `vite.config.js`. No content must be changed.
+2. Remove `tsconfig.json` file because it is not needed.
+3. From `package.json` remove the following dependencies:
     * ts-node
     * typescript
     * vue-tsc
-4. Rename ```app.ts``` to ```app.js``` and make the following changes:
+4. Rename `app.ts` to `app.js` and make the following changes:
 
 ```diff
 -import {createApp, h, DefineComponent} from 'vue';
@@ -53,5 +53,5 @@ createInertiaApp({
 });
 ```
 
-5. Rename ```bootstrap.ts``` to ```bootstrap.js```.
-6. You also need to modify the ```Index.vue``` file accordingly.
+5. Rename `bootstrap.ts` to `bootstrap.js`.
+6. You also need to modify the `Index.vue` file accordingly.
