@@ -10,7 +10,7 @@ To run the dev environment:
 cd ClientApp
 npm run dev
 
-# in another terminal in the Inertia CoreVueApp project directory
+# in another terminal in the InertiaCoreVueApp project directory
 dotnet watch run
 ```
 
