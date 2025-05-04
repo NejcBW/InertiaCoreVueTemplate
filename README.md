@@ -2,6 +2,8 @@
 
 ## Running
 
+### Manually
+
 To run the dev environment:
 
 ```bash
@@ -11,6 +13,15 @@ npm run dev
 # in another terminal in the Inertia CoreVueApp project directory
 dotnet watch run
 ```
+
+### Compound build
+
+If you are using JetBrains Rider IDE you can also use a compound build
+configuration named **Run compound** (it is located in the `.run` directory and
+should normally be automatically picked up by the IDE). The configuration is 
+a compound of two separate configurations:
+- dotnet-watch 'Watch'
+- npm 'run dev'
 
 ## Changing from TypeScript to JavaScript
 
