@@ -4,7 +4,7 @@
 
 To run the dev environment:
 
-```
+```bash
 cd ClientApp
 npm run dev
 
