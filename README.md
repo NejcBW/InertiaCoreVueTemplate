@@ -14,14 +14,27 @@ npm run dev
 dotnet watch run
 ```
 
-### Compound build
+### Compound build (JetBrains Rider)
 
 If you are using JetBrains Rider IDE you can also use a compound build
 configuration named **Run compound** (it is located in the `.run` directory and
-should normally be automatically picked up by the IDE). The configuration is 
+should normally be automatically picked up by the IDE). The configuration is
 a compound of two separate configurations:
+
 - dotnet-watch 'Watch'
 - npm 'run dev'
+
+### npm run start:all
+
+```bash
+cd ClientApp
+npm run start:all
+```
+
+The start:all npm script allows for starting both, the development Vite server
+and the backend ASP.NET Core server in watch mode. This running method first
+waits for the Vite server to become available (by waiting for the TCP port 5173
+to open) before starting the backend server.
 
 ## Changing from TypeScript to JavaScript
 
